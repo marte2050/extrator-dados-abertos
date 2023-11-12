@@ -1,0 +1,7 @@
+site_name: Extrator de dados abertos
+repo_url: https://github.com/marte2050/extrator-dados-abertos
+repo_name: marte2050/extrator-dados-abertos
+
+theme:
+  name: readthedocs
+  language: br
