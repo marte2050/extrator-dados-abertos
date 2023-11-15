@@ -3,5 +3,9 @@ repo_url: https://github.com/marte2050/extrator-dados-abertos
 repo_name: marte2050/extrator-dados-abertos
 
 theme:
-  name: readthedocs
-  language: br
+  name: material
+  language: pt-BR
+
+plugins:
+  - search
+  - mkdocstrings
