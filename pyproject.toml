@@ -8,6 +8,8 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 taskipy = "^1.12.0"
+scrapy = "^2.11.0"
+mkdocs-material = "^9.4.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
@@ -30,13 +32,13 @@ line_length = 79
 
 [tool.taskipy.tasks]
 lint = "blue --check --diff . && isort --check --diff ."
-docs = "mkdocs serve"
+docs = "mkdocs serve -w ."
 pre_test = "task lint"
-test = "pytest -s -x -vv"
+test = "pytest -s -x -vv --disable-warnings"
 post_test = "coverage html"
 
 pre_test_coverage = "task lint"
-test_coverage = "pytest -s -x --cov=. -vv"
+test_coverage = "pytest -s -x --cov=. -vv --disable-warnings"
 post_test_coverage = "coverage html"
 
 [build-system]
