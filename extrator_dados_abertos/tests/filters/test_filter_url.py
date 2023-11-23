@@ -1,6 +1,6 @@
 import pytest
 
-from extrator_dados_abertos.utils.filters import FilterURL
+from extrator_dados_abertos.crawling.filter.filter_urls import FilterURL
 
 
 class TestFilterURL:

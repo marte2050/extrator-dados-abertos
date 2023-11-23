@@ -3,6 +3,10 @@ import re
 
 class FilterURL:
     def __init__(self) -> None:
+        """
+        Descrição:
+        Define os padrões de extensões válidas a serem identificados
+        """
         self.xlsx = re.compile('.*xlsx')
         self.txt = re.compile('.*txt')
         self.odt = re.compile('.*odt')
