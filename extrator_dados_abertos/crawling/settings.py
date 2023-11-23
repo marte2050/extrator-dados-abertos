@@ -1,0 +1,10 @@
+BOT_NAME = 'crawling'
+SPIDER_MODULES = ['crawling.spiders']
+NEWSPIDER_MODULE = 'crawling.spiders'
+ROBOTSTXT_OBEY = True
+REQUEST_FINGERPRINTER_IMPLEMENTATION = '2.7'
+TWISTED_REACTOR = 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'
+FEED_EXPORT_ENCODING = 'utf-8'
+LOG_ENABLED = True
+ITEM_PIPELINES = {'crawling.pipeline.vagas_pipeline.VagasPipeline': 1}
+FILES_STORE = 'data/'
