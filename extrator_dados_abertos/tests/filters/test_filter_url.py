@@ -21,13 +21,13 @@ class TestFilterURL:
         list_text = [
             'https://localhost.com/example.xlsx',
             'https://localhost.com/example.txt',
-            'https://localhost.com/example.odt',
+            'https://localhost.com/example.ods',
             'https://localhost.com/example.pdf',
         ]
 
         result_expected = {
             'xlsx': ['https://localhost.com/example.xlsx'],
-            'odt': ['https://localhost.com/example.odt'],
+            'ods': ['https://localhost.com/example.ods'],
             'txt': ['https://localhost.com/example.txt'],
         }
 

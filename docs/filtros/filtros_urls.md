@@ -1,4 +1,4 @@
-::: extrator_dados_abertos.utils.filters.FilterURL
+::: extrator_dados_abertos.crawling.filter.filter_urls.FilterURL
     handler: python
     members:
         - filter_urls_by_extensions
