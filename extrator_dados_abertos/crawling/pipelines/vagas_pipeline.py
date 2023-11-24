@@ -12,12 +12,12 @@ class VagasPipeline(FilesPipeline):
             e posteriormente obter o nome do arquivo e a extensão.
             Após obter o nome da extensão é feito o processo de remover todos os caracteres
             que não sejam numericos de modo a encontrar a data de criação do arquivo.
-        
+
         args:
             url (str): Endereço do arquivo a ser baixado
-        
+
         Returns:
-            Retorna uma tupla, ao qual terá como parâmetro o nome do arquivo e a extensão        
+            Retorna uma tupla, ao qual terá como parâmetro o nome do arquivo e a extensão
         """
         file_regex = re.compile('/[C,L].*.xlsx$|/[C,L].*.ods$')
         media_ext = Path(url).suffix
@@ -39,13 +39,13 @@ class VagasPipeline(FilesPipeline):
         """
         Descrição:
             Método responsável por renomear o arquivo baixado
-        
+
         args:
-            request (Request)
-            response (Response)
-            info (Info)
-            Item (Objeto item vagas)
-        
+            request (Request): request
+            response (Response): response
+            info (Info): info
+            item (VagasItem): Objeto item vagas
+
         Returns:
             Retorna uma string com o nome do arquivo e extensão
         """
